@@ -19,7 +19,7 @@ public class ClickMe extends Application {
 	public void start(Stage stage) throws Exception {
 		
 		
-		// el 10 significa los pxs le separacion entre elementos
+		
 		VBox root = new VBox(10);
 		
 		Label namelbl = new Label();
@@ -28,7 +28,6 @@ public class ClickMe extends Application {
 
 		//crear controlador para manexar os eventos dos botons
 		 btn.setOnAction(e -> {
-			 //cada vez que se pulsa el boton se le suma una a la lbl
 			 contador++;
 			 namelbl.setText(String.valueOf(contador));
 	        });
