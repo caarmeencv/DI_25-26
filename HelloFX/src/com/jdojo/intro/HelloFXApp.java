@@ -1,0 +1,14 @@
+package com.jdojo.intro;
+
+import javafx.application.Application;
+import javafx.stage.Stage;
+
+public class HelloFXApp extends Application{
+	
+	@Override
+	public void start(Stage stage) {
+		
+		stage.show();
+	}
+
+}
