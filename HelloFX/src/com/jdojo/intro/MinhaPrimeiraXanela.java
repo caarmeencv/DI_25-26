@@ -30,7 +30,7 @@ public class MinhaPrimeiraXanela extends Application {
 		
 		root.getChildren().add(btn);
 
-		Scene scene = new Scene(root, 300, 50);
+		Scene scene = new Scene(root, 400, 300);
 		stage.setScene(scene);
 		stage.setTitle("Miña primeira xanela");
 		stage.show();

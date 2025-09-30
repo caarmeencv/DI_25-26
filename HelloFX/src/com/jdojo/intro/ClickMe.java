@@ -9,7 +9,8 @@ import javafx.stage.Stage;
 
 public class ClickMe extends Application {
 	
-	private int contador = 0;
+	int contador = 0;
+
 	
 	public static void main(String[] args) {
 		Application.launch(args);
