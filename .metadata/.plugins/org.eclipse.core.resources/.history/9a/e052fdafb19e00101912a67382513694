@@ -8,7 +8,6 @@ import javafx.stage.Stage;
 
 public class FXLifeCycleApp extends Application {
 	// Neste caso declaramos explícitamente o constructor para poder ver o nome do fío
-	//constructor
 	public FXLifeCycleApp() {
 		String name = Thread.currentThread().getName();
 		System.out.println("FXLifeCycleApp() constructor: " + name);
