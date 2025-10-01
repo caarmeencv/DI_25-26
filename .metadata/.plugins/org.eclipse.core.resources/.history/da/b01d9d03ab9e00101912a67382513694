@@ -26,7 +26,7 @@ public class CambiarTamanhoXanela extends Application {
 		// o enunciado do xogo
 		Label ancho = new Label("Novo ancho");
 		Label altura = new Label("Nova altura");
-		Label msg = new Label();
+		Label msg = new Label("");
 		// as dimensions da nova xanela
 		TextField fldancho = new TextField();
 		TextField fldaltura = new TextField();
@@ -44,9 +44,7 @@ public class CambiarTamanhoXanela extends Application {
 				if (Valtura > 0 && Vancho > 0) {
 					stage.setWidth(Vancho);
 					stage.setHeight(Valtura);
-				} else {
-					msg.setText("Parametros invalidos");
-				}
+				} 
 
 			} catch (Exception e1) {
 
@@ -61,7 +59,7 @@ public class CambiarTamanhoXanela extends Application {
 
 		Scene scene = new Scene(root, 300, 200);
 		stage.setScene(scene);
-		stage.setTitle("Cambiar Tamaño da Xanela");
+		stage.setTitle("Adiviña o numero");
 		stage.show();
 
 	}

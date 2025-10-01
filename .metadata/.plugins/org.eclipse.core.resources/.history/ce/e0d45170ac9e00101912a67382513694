@@ -61,7 +61,7 @@ public class CambiarTamanhoXanela extends Application {
 
 		Scene scene = new Scene(root, 300, 200);
 		stage.setScene(scene);
-		stage.setTitle("Cambiar Tamaño da Xanela");
+		stage.setTitle("Adiviña o numero");
 		stage.show();
 
 	}
