@@ -1,0 +1,52 @@
+package com.jdojo.intro;
+
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
+
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
+
+public class Ejercicio9_ToDoList extends Application {
+	
+	int contador = 0;
+	
+	public static void main(String[] args) {
+		Application.launch(args);
+	}
+
+	@Override
+	public void start(Stage stage) throws Exception {
+		VBox root = new VBox();
+		
+		//field text para los dos operandos de la operacion y las variables
+		TextField fld = new TextField();
+		
+		//text label para el texto de resultado
+		Label msg = new Label();
+		
+		//boton
+		Button btn = new Button("Nova tarefa");
+
+		
+		//funcions dos botons
+		btn.setOnAction(e -> {
+			String field = fld.getText();
+			contador ++;
+			msg.setText("Tarefa_" + contador + ": " + field + ".");
+
+		});
+		
+		root.getChildren().addAll(fld, btn, msg);
+
+		Scene scene = new Scene(root, 300, 400);
+		stage.setScene(scene);
+		stage.setTitle("MiniCalculadora");
+		stage.show();
+		
+	}
+}

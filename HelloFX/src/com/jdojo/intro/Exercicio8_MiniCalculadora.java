@@ -1,7 +1,5 @@
 package com.jdojo.intro;
 
-import java.text.DecimalFormat;
-
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -23,6 +21,8 @@ public class Exercicio8_MiniCalculadora extends Application {
 		//field text para los dos operandos de la operacion y las variables
 		TextField uno = new TextField();
 		TextField dos = new TextField();
+		uno.setPromptText("Operando 1");
+		dos.setPromptText("Operando 2");
 		
 		//text label para el texto de resultado
 		Label msg = new Label("Resultado:");
