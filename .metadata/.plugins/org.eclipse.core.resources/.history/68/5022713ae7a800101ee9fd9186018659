@@ -1,0 +1,19 @@
+package com.jdojo.binding;
+
+public class ContactoMap {
+	private Map<String, String> datos;
+
+    public ContactoMap(String nome, String telefono) {
+        datos = new HashMap<>();
+        datos.put("nome", nome);
+        datos.put("telefono", telefono);
+    }
+
+    public String get(String chave) {
+        return datos.get(chave);
+    }
+
+    public void set(String chave, String valor) {
+        datos.put(chave, valor);
+    }
+}

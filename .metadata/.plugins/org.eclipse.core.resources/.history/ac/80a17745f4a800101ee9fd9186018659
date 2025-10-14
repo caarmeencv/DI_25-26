@@ -1,0 +1,16 @@
+package com.jdojo.binding;
+
+import javafx.beans.*;
+
+public class Exemplo {
+
+	IntegerProperty counter = new SimpleIntegerProperty(1);
+	int counterValue = counter.get();
+
+	System.out.println("Counter:" + counterValue);
+	counter.set(2);
+
+	counterValue = counter.get();
+	System.out.println("Counter:" + counterValue);
+	
+}
